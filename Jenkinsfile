@@ -5,7 +5,7 @@ pipeline {
         {
             steps
             {
-                git url : "https://github.com/Shilpa40/Hello-World.git"
+                git url : "https://github.com/Shilpa40/react-native-app.git"
             }
         }
     }
