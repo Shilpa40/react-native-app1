@@ -1,7 +1,7 @@
 pipeline {
     environment {
         KEY_PASSWORD = credentials('keyPassword')
-        KEY_ALIAS = credentials('keyAlias')
+        KEY_ALIAS = credentials('keyalias')
         KEYSTORE = credentials('keystore')
         STORE_PASSWORD = credentials('storePassword')
     }
