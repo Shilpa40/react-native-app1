@@ -16,6 +16,8 @@ pipeline {
             switch (env.BRANCH_NAME) {
                 case Constants.MASTER_BRANCH:
                  return Constants.RELEASE_BUILD
+                default:
+                    return Constants.RELEASE_BUILD
     }
 }
     agent any   
