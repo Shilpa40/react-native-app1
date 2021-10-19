@@ -31,7 +31,6 @@ pipeline {
         }
         stage('Build Bundle') {
             steps {
-                echo 'Building'
                  script {
                     VARIANT = getBuildType()
                     bat ".\gradlew -PstorePass=${STORE_PASSWORD} -Pkeystore=${KEYSTORE} -Palias=${KEY_ALIAS} -PkeyPass=${KEY_PASSWORD} bundle${VARIANT}"
