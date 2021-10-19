@@ -31,6 +31,7 @@ pipeline {
             }
        }
        stage('Build Bundle') 
+        {
             steps {
                 echo 'Building'
                 script {
@@ -40,3 +41,6 @@ pipeline {
             }
         }
       }
+    }
+    
+    
