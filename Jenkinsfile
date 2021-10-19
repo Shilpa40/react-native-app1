@@ -15,7 +15,7 @@ pipeline {
     def getBuildType() {
             switch (env.BRANCH_NAME) {
                 case Constants.MASTER_BRANCH:
-                return Constants.RELEASE_BUILD
+                 return Constants.RELEASE_BUILD
     }
 }
     agent any   
