@@ -1,4 +1,4 @@
-pipeline {
+
     class Constants {
     static final String MASTER_BRANCH = 'master'
     static final String RELEASE_BUILD = 'Release'
@@ -20,6 +20,8 @@ pipeline {
                     return Constants.RELEASE_BUILD
     }
 }
+
+pipeline {
     agent any   
     stages {
         stage('Fetch')
