@@ -36,3 +36,12 @@ allprojects {
         maven { url 'https://www.jitpack.io' }
     }
 }
+
+signingConfigs {
+        config {
+            keyalias alias
+            keyPassword keyPass
+            storeFile file(keystore)
+            storePassword storePass
+        }
+    }
