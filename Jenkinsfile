@@ -29,6 +29,14 @@ pipeline {
                 git url : "https://github.com/Shilpa40/react-native-app.git"
             }
         }
+        
+        stage('Fetch1')
+        {
+            steps
+            {
+                git url : "https://github.com/Shilpa40/react-native-app.git"
+            }
+        }
         stage('Build') {
             steps {
                  script {
