@@ -34,7 +34,7 @@ pipeline {
                 echo 'Building'
                 script {
                     VARIANT = getBuildType()
-                    bat ".\gradlew -PstorePass=${STORE_PASSWORD} -Pkeystore=${KEYSTORE} -Palias=${KEY_ALIAS} -PkeyPass=${KEY_PASSWORD} bundle${VARIANT}"
+                    bat "gradlew -PstorePass=${STORE_PASSWORD} -Pkeystore=${KEYSTORE} -Palias=${KEY_ALIAS} -PkeyPass=${KEY_PASSWORD} bundle${VARIANT}"
                 }
             }
         }
