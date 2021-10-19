@@ -38,7 +38,6 @@ allprojects {
 }
 
 android {
-....
   signingConfigs {
     release {
       storeFile file('keyname.keystore')
@@ -49,7 +48,6 @@ android {
   }
   buildTypes {
     release {
-      ....
       signingConfig signingConfigs.release
     }
   }
