@@ -1,5 +1,4 @@
-
-    class Constants {
+class Constants {
     static final String MASTER_BRANCH = 'master'
     static final String RELEASE_BUILD = 'Release'
 
