@@ -12,7 +12,7 @@ class Constants {
     }
     
     def getBuildType() {
-            switch (env.BRANCH_NAME) {
+            switch ("$env.BRANCH_NAME") {
                 case Constants.MASTER_BRANCH:
                  return Constants.RELEASE_BUILD
                 default:
