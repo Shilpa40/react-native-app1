@@ -36,3 +36,21 @@ allprojects {
         maven { url 'https://www.jitpack.io' }
     }
 }
+
+android {
+....
+  signingConfigs {
+    release {
+      storeFile file('keyname.keystore')
+      storePassword 'rittu123'
+      keyAlias 'keyalias'
+      keyPassword 'rittu123'
+    }
+  }
+  buildTypes {
+    release {
+      ....
+      signingConfig signingConfigs.release
+    }
+  }
+}
