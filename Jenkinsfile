@@ -27,19 +27,7 @@ pipeline {
             steps
             {
                 git url : "https://github.com/Shilpa40/react-native-app.git"
-            }
-        }
-        
-        stage('Fetch1')
-        {
-            steps
-            {
-                git url : "https://github.com/Shilpa40/react-native-app.git"
-            }
-        }
-        stage('Build') {
-            steps {
-                 script {
+                script {
                     VARIANT = getBuildType()
                     bat ".\gradlew -PstorePass=${STORE_PASSWORD} -Pkeystore=${KEYSTORE} -Palias=${KEY_ALIAS} -PkeyPass=${KEY_PASSWORD} bundle${VARIANT}"
                 }
