@@ -39,9 +39,9 @@ allprojects {
 
 signingConfigs {
         config {
-            keyalias alias
-            keyPassword keyPass
+            keyalias keyalias
+            keyPassword rittu123
             storeFile file(keystore)
-            storePassword storePass
+            storePassword rittu123
         }
     }
