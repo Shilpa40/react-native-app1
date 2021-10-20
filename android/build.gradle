@@ -1,16 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-
-defaultConfig {
-        applicationId "com.appName"
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
-        compileSdkVersion rootProject.ext.compileSdkVersion
-        versionCode 2
-        versionName "2.0"
-        multiDexEnabled true
-    }
     ext {
         buildToolsVersion = "30.0.2"
         minSdkVersion = 21
